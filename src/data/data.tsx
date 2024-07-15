@@ -53,12 +53,12 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Kyle Nahrgang.`,
+  name: `Kyle Nahrgang.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Principal Software Engineer</strong> based in the <strong className="text-stone-100">Philadelphia, PA suburbs</strong>, currently working
-        at <strong className="text-stone-100">ADT Inc.</strong> designing, documenting, and helping deliver ADT's next generation of home security systmes.
+        I am a <strong className="text-stone-100">Principal Software Engineer</strong> based in the <strong className="text-stone-100">Philadelphia, PA</strong>  suburbs, currently working
+        at <strong className="text-stone-100">ADT Inc.</strong> designing, documenting, and helping deliver ADT's next generation of home security systems.
       </p>
     </>
   ),
@@ -101,6 +101,7 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
+  /*
   {
     name: 'Frontend development',
     skills: [
@@ -152,6 +153,7 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
+  */
 ];
 
 /**
@@ -241,6 +243,7 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
+  /*
   {
     date: 'March 2010 - Present',
     location: 'Awesome Development Company',
@@ -263,6 +266,7 @@ export const experience: TimelineItem[] = [
       </p>
     ),
   },
+  */
 ];
 
 /**
