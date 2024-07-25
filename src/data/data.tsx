@@ -243,30 +243,99 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
-  /*
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'May 2024 - Present',
+    location: 'ADT Inc.',
+    title: 'Principal Software Engineer, Product Architecture',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Design, document, and assist in delivery of complex features crossing multiple technologies.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2021 - May 2024',
+    location: 'ADT Inc.',
+    title: 'Senior Engineer II',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Lead software development team focused on the delivery of the next generation of ADT's home security devices.
       </p>
     ),
   },
-  */
+  {
+    date: 'May 2020 - September 2021',
+    location: 'ADT Inc.',
+    title: 'Embedded Software Engineer',
+    content: (
+      <p>
+        Contribute to the design and development of the next generation of ADT's home security devices.
+      </p>
+    ),
+  },
+  {
+    date: 'September 2019 - May 2020',
+    location: 'Fiserv',
+    title: 'Software Development Team Lead',
+    content: (
+      <p>
+      </p>
+    ),
+  },
+  {
+    date: 'December 2018 - September 2019',
+    location: 'Fiserv',
+    title: 'Senior Embedded Software Engineer',
+    content: (
+      <p>
+      </p>
+    ),
+  },
+  {
+    date: 'January 2017 - December 2018',
+    location: 'Fiserv',
+    title: 'Embedded Software Engineer',
+    content: (
+      <p>
+      </p>
+    ),
+  },
+  {
+    date: 'May 2014 - January 2017',
+    location: 'Unisys',
+    title: 'Senior Software Engineer',
+    content: (
+      <p>
+      </p>
+    ),
+  },
+  {
+    date: 'April 2013 - May 2014',
+    location: 'Unisys',
+    title: 'Software Engineer',
+    content: (
+      <p>
+      </p>
+    ),
+  },
+  {
+    date: 'June 2011 - April 2013',
+    location: 'Unisys',
+    title: 'Associate Software Engineer',
+    content: (
+      <p>
+      </p>
+    ),
+  },
+  {
+    date: 'September 2007 - June 2011',
+    location: 'Unisys',
+    title: 'Software Engineering Co-op',
+    content: (
+      <p>
+      </p>
+    ),
+  },
 ];
 
 /**
