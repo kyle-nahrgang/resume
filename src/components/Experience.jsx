@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, CardOverflow, Chip,  Stack, Typography } from "@mui/joy";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Card, CardContent, CardOverflow, Chip,  Sheet,  Stack, Typography } from "@mui/joy";
 import { TwoColumnList } from "./TwoColumnList";
 
 
@@ -24,38 +24,31 @@ function Title({title}) {
 
 function Company({company}) {
     return (     
-        <Card sx={{marginBottom: 3}} variant="soft">
-            <CardContent>
-                <Stack direction="row">
-                    <Typography level="title-lg">{company.name}</Typography>
+        <Accordion defaultExpanded={true} sx={{paddingTop: 2}}>
+            <AccordionSummary>
+                <Stack direction="row" width={"100%"}>
+                    <Typography level="h3">{company.name}</Typography>
                     <Typography level="title-lg" sx={{ marginLeft: "auto" }}>{company.location}</Typography>
                     {
                         company.remote ? <Chip sx={{marginLeft: 2}} variant="outlined">REMOTE</Chip> : null
                     }
                 </Stack>
+            </AccordionSummary>
+        
+            <AccordionDetails>
                 {
                     company.titles.map((title) => (<Title title={title} />))
                 }
-            </CardContent>
-
-            <CardOverflow
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    gap: 1,
-                    py: 1,
-                }}
-            >
-             
-                {
-                    company.tags ? 
-                    company.tags.map((tag) => (<Chip sx={{margin:1}} variant="solid" onClick={function(){}}>{tag}</Chip>))
-                    : null
-                }
-                        
-             
-            </CardOverflow>
-        </Card>
+                
+                <Box sx={{paddingTop: 2, paddingBottom: 2}}>
+                    {
+                        company.tags ? 
+                        company.tags.map((tag) => (<Chip sx={{margin:1}} variant="solid" onClick={function(){}}>{tag}</Chip>))
+                        : null
+                    }
+                </Box>
+            </AccordionDetails>
+        </Accordion>
         
     )
 }
