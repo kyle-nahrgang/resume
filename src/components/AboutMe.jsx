@@ -11,25 +11,58 @@ import LanguageIcon from '@mui/icons-material/Language';
 import {  CardActions, Divider, Link } from '@mui/joy';
 
 
+function ContactButton({data}) {
+    return (
+        <IconButton component={Link} target='_blank' href={data.url} size="sm" variant="plain" color="neutral">
+            {data.type === "github" && <GitHubIcon />}
+            {data.type === "linkedin" && <LinkedInIcon />}
+            {data.type === "email" && <EmailIcon />}
+            {data.type === "website" && <LanguageIcon />}
+        </IconButton>
+    );
+}
+
 export function AboutMe() {
+    const data = {
+        name: "Kyle Nahrgang",
+        title: "Software Technologist",
+        location: "Collegeville, PA",
+        about: "I am a seasoned software engineer with extensive experience in designing, implementing, and documenting architectural solutions that require cross-team collaboration. My career includes a strong focus on technical engineering, where I have developed a passion for creating robust software solutions. I have a proven track record of building highly functional teams that deliver complex features, backed by a deep understanding of embedded software design and a commitment to engineering excellence.",
+        email: "career@kyle.nahrgang.dev",
+        phone: "610.304.0538",
+        links: [
+            {
+                type: "github",
+                url: "https://github.com/kylenahrgang"
+            },
+            {
+                type: "linkedin",
+                url: "https://www.linkedin.com/in/kyle-nahrgang/"
+            },
+            {
+                type: "website",
+                url: "https://nahrgang.dev/"
+            },
+        ]
+    }
     return (
         <Card sx={{ boxShadow: 'lg' }}>
             <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
                 <Avatar variant="circle" src="profile.jpg" sx={{ '--Avatar-size': '8rem' }} />
 
-                <Typography level="h1">Kyle Nahrgang</Typography>
-                <Typography level="title-lg">Software Technologist</Typography>
-                <Typography level="body-md">Collegeville, PA</Typography>
+                <Typography level="h1">{data.name}</Typography>
+                <Typography level="title-lg">{data.title}</Typography>
+                <Typography level="body-md">{data.location}</Typography>
                 <Divider />
                 <Typography level='body-sm'  sx={{ fontStyle: "italic" }}>
-                I am a seasoned software engineer with extensive experience in designing, implementing, and documenting architectural solutions that require cross-team collaboration. My career includes a strong focus on technical engineering, where I have developed a passion for creating robust software solutions. I have a proven track record of building highly functional teams that deliver complex features, backed by a deep understanding of embedded software design and a commitment to engineering excellence.
+                    {data.about}
                 </Typography>
             </CardContent>
             <CardActions buttonFlex="0 1 120px" sx={{ justifyContent: 'center'}}>
-                <IconButton component={Link} target='_blank' href="https://github.com/kylenahrgang" size="sm" variant="plain" color="neutral"><GitHubIcon /></IconButton>
-                <IconButton component={Link} target='_blank' href="https://www.linkedin.com/in/kyle-nahrgang/" size="sm" variant="plain" color="neutral"><LinkedInIcon /></IconButton>
-                <IconButton component={Link} target='_blank' href="mailto:career@kyle.nahrgang.dev" size="sm" variant="plain" color="neutral"><EmailIcon /></IconButton>
-                <IconButton component={Link} target='_blank' href="https://nahrgang.dev" size="sm" variant="plain" color="neutral"><LanguageIcon /></IconButton>
+                {
+                    data.links.map((link) => (<ContactButton data={link} />))
+                }
+                <ContactButton data={{type: "email", url: `mailto:${data.email}`}} />
             </CardActions>
         </Card>
     );
