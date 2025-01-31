@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {  AccordionGroup, Box, Stack, Typography,} from '@mui/joy';
+import {  AccordionGroup, Box, Button, Stack, Typography,} from '@mui/joy';
 import { AboutMe } from './components/AboutMe';
 import { Section } from './components/Section';
 import  {
@@ -11,9 +11,10 @@ import { InfoCardGrid } from './components/InfoCardGrid';
 import { ChipList } from './components/ChipList';
 import { Experience } from './components/Experience';
 import { Education } from './components/Education';
+import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
+import { pdf } from '@react-pdf/renderer';
 
-
-function Resume({...params}) {
+export function Resume({...params}) {
   return (
     <Box sx={{ flexGrow: 1 , margin: 5, display: 'flex'}} justifyContent="center">
       <Stack spacing={5}>
@@ -48,10 +49,18 @@ function Resume({...params}) {
 }
 
 function App() {
-  const [forPrint, setForPrint] = React.useState(false)
+  const [forPrint, setForPrint] = React.useState(false);
+
   return (
     <div className="App">
       <Resume forPrint={forPrint} />
+      <Button
+        startDecorator={<DownloadForOfflineIcon />} sx={{position: 'fixed', top: 50, right: 50}}
+
+        >
+        PDF
+      </Button>
+
     </div>
   );
 }
