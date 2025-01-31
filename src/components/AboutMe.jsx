@@ -8,22 +8,49 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
-import { CardActions, Grid, Link } from '@mui/joy';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import { Box, CardActions, Grid, Link, Stack } from '@mui/joy';
 
 
-function ContactButton({data}) {
+function ContactButton({data, ...params}) {
     return (
         <IconButton component={Link} target='_blank' href={data.url} size="sm" variant="plain" color="neutral">
+            {
+                params.forPrint === true ? (
+                    <Typography textAlign='right' marginLeft='auto' marginRight={2}> {data.url}</Typography>
+                ) : null
+            }
             {data.type === "github" && <GitHubIcon />}
             {data.type === "linkedin" && <LinkedInIcon />}
             {data.type === "email" && <EmailIcon />}
             {data.type === "website" && <LanguageIcon />}
+            {data.type === "phone" && <LocalPhoneIcon />}
         </IconButton>
     );
 }
 
-export function AboutMe({ data }) {
-    return (
+export function AboutMe({ data , ...params}) {
+    return params.forPrint === true ?
+    (
+        <Box>
+            <Stack direction='row'>
+                <Box textAlign='left'>
+                    <Typography level="h1">{data.name}</Typography>
+                    <Typography level="title-lg">{data.title}</Typography>
+                    <Typography level="body-md">{data.location}</Typography>
+                </Box>
+                <Box marginLeft='auto'>
+                    <Stack>
+                    {
+                        data.links.map((link) => (<ContactButton data={link} {...params} />))
+                    }
+                    <ContactButton data={{type: "email", url: `${data.email}`}} {...params}  />
+                    <ContactButton data={{type: "phone", url: `${data.phone}`}} {...params}  />
+                    </Stack>
+                </Box>
+            </Stack>
+        </Box>
+    ) : (
         <Grid container spacing={2}>
             <Grid item sm={4} margin='auto'>
                 <Card sx={{ boxShadow: 'lg', margin: 'auto' }}>
@@ -39,8 +66,8 @@ export function AboutMe({ data }) {
                         }
                         <ContactButton data={{type: "email", url: `mailto:${data.email}`}} />
                     </CardActions>
-                </Card>   
-            </Grid>  
+                </Card>
+            </Grid>
             <Grid item sm={8} sx={{margin: 'auto'}}>
                 <Typography level='body-md' sx={{ fontStyle: "italic" }}>
                     {data.about}
@@ -48,4 +75,5 @@ export function AboutMe({ data }) {
             </Grid>
         </Grid>
     );
+
 }
