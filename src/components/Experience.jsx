@@ -1,5 +1,5 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Card, CardContent, CardOverflow, Chip,  Sheet,  Stack, Typography } from "@mui/joy";
-import { TwoColumnList } from "./TwoColumnList";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Card, CardContent,  Chip,   Stack, Typography } from "@mui/joy";
+import { DynamicColumnList } from "./DynamicColumnList";
 
 
 
@@ -14,7 +14,7 @@ function Title({title}) {
                     </Typography>
                 </Stack>
                 
-                <TwoColumnList items={title.responsibility} />              
+                <DynamicColumnList items={title.responsibility} />              
             </CardContent>
         </Card>
         

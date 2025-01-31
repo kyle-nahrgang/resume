@@ -8,7 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
-import {  CardActions, Divider, Link } from '@mui/joy';
+import { CardActions, Grid, Link } from '@mui/joy';
 
 
 function ContactButton({data}) {
@@ -27,7 +27,7 @@ export function AboutMe() {
         name: "Kyle Nahrgang",
         title: "Software Technologist",
         location: "Collegeville, PA",
-        about: "I am a seasoned software engineer with extensive experience in designing, implementing, and documenting architectural solutions that require cross-team collaboration. My career includes a strong focus on technical engineering, where I have developed a passion for creating robust software solutions. I have a proven track record of building highly functional teams that deliver complex features, backed by a deep understanding of embedded software design and a commitment to engineering excellence.",
+        about: "I am a seasoned software technologist with extensive experience in designing, implementing, and documenting architectural solutions that require cross-team collaboration. My career includes a strong focus on technical engineering, where I have developed a passion for creating robust software solutions. I have a proven track record of building highly functional teams that deliver complex features, backed by a deep understanding of embedded software design and a commitment to engineering excellence.",
         email: "career@kyle.nahrgang.dev",
         phone: "610.304.0538",
         links: [
@@ -46,24 +46,28 @@ export function AboutMe() {
         ]
     }
     return (
-        <Card sx={{ boxShadow: 'lg' }}>
-            <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
-                <Avatar variant="circle" src="profile.jpg" sx={{ '--Avatar-size': '8rem' }} />
-
-                <Typography level="h1">{data.name}</Typography>
-                <Typography level="title-lg">{data.title}</Typography>
-                <Typography level="body-md">{data.location}</Typography>
-                <Divider />
-                <Typography level='body-sm'  sx={{ fontStyle: "italic" }}>
+        <Grid container spacing={2}>
+            <Grid item sm={4} margin='auto'>
+                <Card sx={{ boxShadow: 'lg', margin: 'auto' }}>
+                    <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
+                        <Avatar variant="circle" src="profile.jpg" sx={{ '--Avatar-size': '8rem', margin: 'auto' }} />
+                        <Typography level="h1">{data.name}</Typography>
+                        <Typography level="title-lg">{data.title}</Typography>
+                        <Typography level="body-md">{data.location}</Typography>
+                    </CardContent>
+                    <CardActions buttonFlex="0 1 120px" sx={{ justifyContent: 'center'}}>
+                        {
+                            data.links.map((link) => (<ContactButton data={link} />))
+                        }
+                        <ContactButton data={{type: "email", url: `mailto:${data.email}`}} />
+                    </CardActions>
+                </Card>   
+            </Grid>  
+            <Grid item sm={8} sx={{margin: 'auto'}}>
+                <Typography level='body-md' sx={{ fontStyle: "italic" }}>
                     {data.about}
                 </Typography>
-            </CardContent>
-            <CardActions buttonFlex="0 1 120px" sx={{ justifyContent: 'center'}}>
-                {
-                    data.links.map((link) => (<ContactButton data={link} />))
-                }
-                <ContactButton data={{type: "email", url: `mailto:${data.email}`}} />
-            </CardActions>
-        </Card>
+            </Grid>
+        </Grid>
     );
 }
