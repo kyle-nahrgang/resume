@@ -22,29 +22,7 @@ function ContactButton({data}) {
     );
 }
 
-export function AboutMe() {
-    const data = {
-        name: "Kyle Nahrgang",
-        title: "Software Technologist",
-        location: "Collegeville, PA",
-        about: "I am a seasoned software technologist with extensive experience in designing, implementing, and documenting architectural solutions that require cross-team collaboration. My career includes a strong focus on technical engineering, where I have developed a passion for creating robust software solutions. I have a proven track record of building highly functional teams that deliver complex features, backed by a deep understanding of embedded software design and a commitment to engineering excellence.",
-        email: "career@kyle.nahrgang.dev",
-        phone: "610.304.0538",
-        links: [
-            {
-                type: "github",
-                url: "https://github.com/kylenahrgang"
-            },
-            {
-                type: "linkedin",
-                url: "https://www.linkedin.com/in/kyle-nahrgang/"
-            },
-            {
-                type: "website",
-                url: "https://nahrgang.dev/"
-            },
-        ]
-    }
+export function AboutMe({ data }) {
     return (
         <Grid container spacing={2}>
             <Grid item sm={4} margin='auto'>

@@ -11,8 +11,7 @@ export function InfoCard({info}) {
                 <Typography level="title-md" textAlign="left" sx={{textTransform: 'uppercase', whiteSpace: "normal", wordBreak: "break-word", overflow: "visible"}}>{info.title}</Typography>
                 <Typography level="body-sm" textAlign="left" sx={{fontStyle:'italic', marginLeft: 'auto', marginRight: 1, textTransform: 'uppercase'}}>{info.subtitle}</Typography>
                 <DynamicColumnList items={info.bullets} />     
-                <Typography textAlign="left" level="body-sm">{info.description}</Typography>
-                         
+                <Typography textAlign="left" level="body-sm">{info.description}</Typography>                         
             </CardContent>
             <CardOverflow
                 variant="soft"

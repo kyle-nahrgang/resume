@@ -1,0 +1,322 @@
+{
+    "about": {
+        "name": "Kyle Nahrgang",
+        "title": "Software Technologist",
+        "location": "Collegeville, PA",
+        "about": "I am a seasoned software technologist with extensive experience in designing, implementing, and documenting architectural solutions that require cross-team collaboration. My career includes a strong focus on technical engineering, where I have developed a passion for creating robust software solutions. I have a proven track record of building highly functional teams that deliver complex features, backed by a deep understanding of embedded software design and a commitment to engineering excellence.",
+        "email": "career@kyle.nahrgang.dev",
+        "phone": "610.304.0538",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/kylenahrgang"
+            },
+            {
+                "type": "linkedin",
+                "url": "https://www.linkedin.com/in/kyle-nahrgang/"
+            },
+            {
+                "type": "website",
+                "url": "https://nahrgang.dev/"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "type" : "chips",
+            "title" : "Skills",
+            "data" : [
+                "C",
+                "C++",
+                "Rust",
+                "ReactJS",
+                "BuildRoot",
+                "Python",
+                "OOP",
+                "Embedded Systems",
+                "Machine Learning",
+                "Java",
+                "Spring Boot",
+                "MongoDB",
+                "SQL",
+                "Shell Scripting",
+                "Linux",
+                "Agile",
+                "Git",
+                "JIRA",
+                "GCP",
+                "Harness",
+                "Dynatrace",
+                "LucidChart",
+                "Automation",
+                "Docker",
+                "Z-Wave",
+                "BLE",
+                "REST",
+                "Device Drivers",
+                "Software Architecture",
+                "Leadership"
+            ]
+        },
+        {
+            "type" : "info-grid",
+            "title" : "Projects",
+            "data" : [
+                {
+                    "title": "FULL-STACK BILLIARD LEAGUE HANDICAP PREDICTION APP",
+                    "bullets": [
+                        "React Frontend",
+                        "Rust / Actix-web REST API",
+                        "Auth0 JWT authentication",
+                        "MongoDB (Atlas) backed database",
+                        "Reverse-engineered GraphQL API to scrape league data",
+                        "Docker container running nginx hosted by GCP cloud-run instance",
+                        "Custom machine learning models for handicap prediction using Rust (burn)"
+                    ],
+                    "tags": [
+                        "React",
+                        "Rust",
+                        "REST API",
+                        "MongoDB",
+                        "GraphQL",
+                        "GCP",
+                        "Auth0"
+                    ],
+                    "url": "https://apa.nahrgang.dev"
+                },
+                {
+                    "title": "REACT RESUME TEMPLATE",
+                    "bullets": [
+                        "Joy-UI Components",
+                        "Driven by JSON Data"
+                    ],
+                    "tags": [
+                        "React",
+                        "Joy-UI"
+                    ],
+                    "url": "https://github.com/kyle-nahrgang/resume"
+                }
+            ]
+        },
+        {
+            "type": "experience",
+            "title": "Experience",
+            "data": [
+                {
+                    "name": "XYPRO",
+                    "location": "Simi Valley, CA",
+                    "remote": true,
+                    "titles": [
+                        {
+                            "role": "Software Engineer III",
+                            "start": "Oct 2024",
+                            "responsibility": [
+                                "Contribute to and support legacy applications built for HPE NonStop",
+                                "Improve build systems"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ADT",
+                    "location": "Blue Bell, PA",
+                    "remote": true,
+                    "tags": [
+                        "Software Architecture", "C++", "GCP", "Secure Boot", "Home Automation" 
+                    ],
+                    "titles": [
+                        {
+                            "role": "Principal Software Engineer",
+                            "start": "Feb 2024",
+                            "end": "Oct 2024",
+                            "responsibility": [
+                                "Design and document architectural solutions for implementing complicated features that cross multiple engineering team",
+                                "Present in-depth analysis of problems and solutions to executive and engineering audiences",
+                                "Design enterprise-level architecture solutions",
+                                "Research solutions and make recommendations for complex engineering problems",
+                                "Implement processes to streamline architecture intake and output",
+                                "Coordinate design across several functional components and teams",
+                                "Negotiate feature requirements with stakeholders"
+                            ]
+                        },
+                        {
+                            "role": "Senior Software Engineer II - Embedded",
+                            "start": "Sep 2021",
+                            "end": "Feb 2024",
+                            "responsibility": [
+                                "Lead a team developing the next generation home security product using using a proprietary ARM based embedded Linux environment that conforms to security industry standards (SIA PC-01, UL985, UL1023))",
+                                "Organize several team members to implement design while driving best practices for development, testing, and deployment",
+                                "Maintain build artifacts and records in GCP (Google Cloud Storage, Spanner)",
+                                "Support production issues leveraging custom logging in Dynatrace and Splunk",
+                                "Drive coordination between development teams for multiple system components",
+                                "Participate in hardware validation at mass manufacturing facility",
+                                "Support and participate in third-party penetration testing."
+                            ]
+                        },
+                        {
+                            "role": "Embedded Software Engineer",
+                            "start": "May 2020",
+                            "end": "Sep 2021",
+                            "responsibility": [
+                                "Debug and modify Linux kernel code and drivers",
+                                "Research and develop embedded encryption tools and methods for ARM using OP-TEE",
+                                "Implement Secure Boot",
+                                "Lead the rewrite of an embedded security business logic application using modern C++ techniques (C++17) resulting in a 60% reduction of the lines of code and 95% unit test code coverage",
+                                "Drive process improvements to increase reliability and productivity of development team",
+                                "Build a firmware recovery platform (Python Django)",
+                                "Maintain Buildroot build system",
+                                "Automate build and deployment process (Jenkins, GCP Cloud Build, Harness). Establish coding standards and best practices"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CardConnect / FirstData / Fiserv",
+                    "location": "King of Prussia, PA",
+                    "titles": [
+                        {
+                            "role": "Software Development Team Lead - Embedded",
+                            "start": "Sep 2019",
+                            "end": "May 2020",
+                            "responsibility": [
+                                "Lead a team developing embedded applications for credit card terminals to meet industry standards (EMV, ISO-8583, PCI-DSS)",
+                                "Organize and lead the development for a new embedded payment application",
+                                "Negotiate new features and schedule releases with input from stakeholders",
+                                "Interface with customers to gather feature requirements and handle support escalations"
+                            ]
+                        },
+                        {
+                            "role": "Senior Embedded Software Engineer",
+                            "start": "Dec 2018",
+                            "end": "Sep 2019",
+                            "responsibility": [
+                                "Fully automate device and application certification testing, including building a Python based UI and an OpenBuilds based robot driven by a Java Spring Boot application",
+                                "Drive industry best practices to the development, test, and deployment process",
+                                "Attend industry conferences and report on changing standards",
+                                "Own domain knowledge for payment certification requirements"
+                            ]
+                        },
+                        {
+                            "role": "Embedded Software Engineer",
+                            "start": "Jan 2017",
+                            "end": "Dec 2018",
+                            "responsibility": [
+                                "Manage build process of embedded application using Jenkins and Bitbucket",
+                                "Modernize legacy code base",
+                                "Leverage vendor SDK to develop payment acceptance features (Ingenico)",
+                                "Support and participate in PCI certifications",
+                                "Establish coding standards and best practices"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Unisys",
+                    "location": "Malvern, PA",
+                    "titles": [
+                        {
+                            "role": "Senior Software Engineer",
+                            "start": "May 2014",
+                            "end": "Jan 2017",
+                            "responsibility": [
+                                "Act as Scrum Master for team of 5 to 10 engineers",
+                                "Develop high-speed interconnect between hypervisors using Infiniband",
+                                "Develop network monitoring application to assist in network security configuration"
+                            ]
+                        },
+                        {
+                            "role": "Software Engineer",
+                            "start": "Apr 2013",
+                            "end": "May 2014",
+                            "responsibility": [
+                                "Develop virtual device drivers for Linux and Windows",
+                                "Maintain Buildroot build system",
+                                "Communicate with engineers inside and outside of my team"
+                            ]
+                        },
+                        {
+                            "role": "Associate Software Engineer",
+                            "start": "Jun 2011",
+                            "end": "Apr 2013",
+                            "responsibility": [
+                                "Contribute to Secure Partitioning (s-Par) hypervisor",
+                                "Research and understand design guidelines",
+                                "Accurately estimate time required to complete tasks",
+                                "Document patch details effectively"
+                            ]
+                        },
+                        {
+                            "role": "Software Engineering Co-op",
+                            "start": "Sep 2007",
+                            "end": "Jun 2011",
+                            "responsibility": [
+                                "Write firmware in C and C#",
+                                "Identify, research, and fix bugs",
+                                "Implement and complete assigned tasks according to the SCRUM process",
+                                "Write applications to assist hardware testing"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "info-grid",
+            "title" : "Patents",
+            "data": [
+                {
+                    "title": "Establishing trust between applications in a computing environment",
+                    "subtitle": "Application US17/885,236",
+                    "description": "A method, system and device are disclosed. A premises device comprising a first operating system and a second operating system is described. The premises device comprises processing circuitry configured to establish a chain of trust at least between the first operating system and at least one software application associated with the second operating system. The processing circuitry is further configured to perform at least one action based at least in part on the established chain of trust.",
+                    "tags": [
+                        "ADT", "Pending", "Aug 2022"
+                    ],
+                    "url": "https://patents.google.com/patent/US20230049508A1"
+                },
+                {
+                    "title": "Network provisioning and tokenization using a remote terminal",
+                    "subtitle": "US-12047356",
+                    "description": "A method of tokenizing sensitive data from a terminal device includes receiving, a connection request comprising a hardware serial number associated with a terminal device and validating the hardware serial number associated with the terminal device. The method includes sending a command to a terminal device that causes the terminal device to display a prompt for sensitive data associated with a user interacting with the terminal device and receiving an encrypted data packet from the terminal device. The encrypted data packet includes the sensitive data. The method includes sending the encrypted data packet to a gateway system for tokenization, receiving a token that represents the sensitive data, and providing the token to the terminal device.",
+                    "tags": [
+                        "FirstData", "Nov 2021"
+                    ],
+                    "url": "https://patents.google.com/patent/US12047356B2"
+                },
+                {
+                    "title": "Nonstop Computing Fabric Arrangements",
+                    "subtitle": "US-10965616",
+                    "description": "Systems and methods for non-stop computing in a virtualization fabric are disclosed. One system includes a computing fabric comprising a plurality of host platforms, the plurality of host platforms including at least a first host platform and a second host platform communicatively connected to the first host platform. The system also includes an interconnect service partitions residing on the first host platform. The system includes a plurality of guest partitions distributed across the plurality of host platforms. The system further includes a DNS server instance managed by at least one of the plurality of interconnect service partitions and defining at least one zone, the at least one zone including one or more partitions from among the plurality of guest partitions distributed across the plurality of host plat forms.",
+                    "tags": [
+                        "Unisys", "March 2021"
+                    ],
+                    "url": "https://patents.google.com/patent/US10965616B2"
+                },
+                {
+                    "title": "System and method of constructing a memory-based interconnect between multiple partitions",
+                    "subtitle":  "Application US13/955,188",
+                    "bullets": [
+        
+                    ],
+                    "description": "The shared memory interconnect system provides an improved method for efficiently and dynamically sharing resources between two or more guest partitions. The system also provides a method to amend the parameters of the shared resources without resetting all guest partitions. In various embodiments, a XML file is used to dynamically define the parameters of shared resources. In one such embodiment using a XML or equivalent file, the interconnect system driver will establish a mailbox shared by each guest partition. The mailbox provides messaging queues and related structures between the guest partitions. In various embodiments, the interconnect system driver may use macros to locate each memory structure. The shared memory interconnect system allows a virtualization system to establish the parameters of shared resources during runtime.",
+                    "tags": [
+                       "Unisys", "Abandoned", "March 2013"
+                    ],
+                    "url": "https://patents.google.com/patent/US20140143372A1"
+                }
+            ]
+        },
+        {
+            "type" : "education",
+            "title" : "Education",
+            "data": [
+                {
+                    "name": "Drexel University",
+                    "location": "Philadelphia, PA",
+                    "degree": "B.S. Computer Engineering",
+                    "start": "Sep 2006",
+                    "end": "Jun 2011"
+                }
+            ]
+        }
+    ]
+}

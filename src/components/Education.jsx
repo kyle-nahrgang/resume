@@ -1,20 +1,10 @@
 import { Card, CardContent, Stack, Typography } from "@mui/joy";
 
-export function Education() {
-    const education = [
-        {
-            name: "Drexel University",
-            location: "Philadelphia, PA",
-            degree: "B.S. Computer Engineering",
-            start: "Sep 2006",
-            end: "Jun 2011"
-        }
-    ]
-   
+export function Education({ data }) {
     return (
         <Stack>
             {
-                education.map((school) => (
+                data.map((school) => (
                     <Card>
                         <CardContent>
                             <Stack direction='row'>
