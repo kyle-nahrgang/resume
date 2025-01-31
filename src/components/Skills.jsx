@@ -4,6 +4,7 @@ export function Skills() {
     const skills = [
         "C",
         "C++",
+        "ReactJS",
         "BuildRoot",
         "Python",
         "OOP",

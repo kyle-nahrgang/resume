@@ -1,31 +1,13 @@
-import { Box, Card, CardContent, CardOverflow, Chip, Divider, IconButton, Link, List, Stack, Typography } from "@mui/joy";
+import { Box, Card, CardContent, CardOverflow, Chip, IconButton, Link, Stack, Typography } from "@mui/joy";
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import { TwoColumnList } from "./TwoColumnList";
 
-const TwoColumnList = ({ items }) => {
-    return (
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)", // Two equal columns
-        }}
-      >
-        {items.map((item, index) => (
-          <Typography key={index} level="body-sm" textAlign="left" sx={{ marginLeft: 3}}>
-            ● {item}
-          </Typography>
-        ))}
-      </Box>
-    );
-  };
 
 function Project({project}) {
     return (     
-        <Card>
+        <Card sx={{marginBottom: 3}}>
             <CardContent>
                 <Typography level="title-md" textAlign="left">{project.name}</Typography>
-                <List>
-
-                </List>
                 <TwoColumnList items={project.bullet_points} />              
             </CardContent>
             <CardOverflow
@@ -44,8 +26,13 @@ function Project({project}) {
                         }
                         
                     </Box>
-                    <Divider sx={{ marginLeft: "auto" }} orientation="vertical" />
-                    <IconButton sx={{marginLeft: 2}} component={Link} target='_blank' href={project.url} size="sm" variant="plain" color="neutral"><ExitToAppIcon /></IconButton>
+                    {
+                        project.url ? (
+                            <IconButton sx={{marginLeft: "auto"}} component={Link} target='_blank' href={project.url} size="sm" variant="plain" color="neutral">
+                                <ExitToAppIcon />
+                            </IconButton>
+                        ) : null
+                    }
                 </Stack>
             </CardOverflow>
         </Card>
@@ -77,7 +64,18 @@ export function Projects() {
             ],
             url: "https://apa.nahrgang.dev"
         },
-
+        {
+            name: "REACT RESUME TEMPLATE",
+            bullet_points: [
+                "Joy-UI Components",
+                "Driven by JSON Data",
+            ],
+            tags: [
+                "React",
+                "Joy-UI",
+            ],
+            url: "https://github.com/kyle-nahrgang/resume"
+        },
     ]
 
     return (
