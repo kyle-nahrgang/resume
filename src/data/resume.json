@@ -26,36 +26,44 @@
             "type" : "chips",
             "title" : "Skills",
             "data" : [
+                "Agile",
+                "API Development",
+                "Automation",
+                "Bash",
+                "BLE",
+                "Buildroot",
                 "C",
                 "C++",
-                "Rust",
-                "ReactJS",
-                "BuildRoot",
-                "Python",
-                "OOP",
-                "Embedded Systems",
-                "Machine Learning",
-                "Java",
-                "Spring Boot",
-                "MongoDB",
-                "SQL",
-                "Shell Scripting",
-                "Linux",
-                "Agile",
-                "Git",
-                "JIRA",
-                "GCP",
-                "Harness",
-                "Dynatrace",
-                "LucidChart",
-                "Automation",
+                "C#",
                 "Docker",
-                "Z-Wave",
-                "BLE",
+                "Dynatrace",
+                "Embedded Systems",
+                "Git",
+                "Java",
+                "Jenkins",
+                "JIRA",
+                "Linux",
+                "LucidChart",
+                "Mac OSX",
+                "Machine Learning",
+                "MongoDB",
+                "NoSQL",
+                "Object-oriented Programming",
+                "Python",
+                "ReactJS",
                 "REST",
-                "Device Drivers",
+                "Rust",
                 "Software Architecture",
-                "Leadership"
+                "SpringBoot",
+                "Splunk",
+                "SQL",
+                "Test Driven Development",
+                "ULE",
+                "Unit Tests",
+                "Virtualization",
+                "Websockets",
+                "Windows",
+                "Z-Wave"
             ]
         },
         {
@@ -108,11 +116,14 @@
                     "remote": true,
                     "titles": [
                         {
-                            "role": "Software Engineer III",
+                            "role": "Senior Software Engineer",
                             "start": "Oct 2024",
                             "responsibility": [
-                                "Contribute to and support legacy applications built for HPE NonStop",
-                                "Improve build systems"
+                                "Spent 100% of time using C to implement bug fixes and improvements to SQLXpress, an interface for the SQL subsystem on HPE NonStop",
+                                "Improved Makefile build system",
+                                "Created custom VS-Code extension using TypeScript to remotely debug C/C++ applications on HPE NonStop host",
+                                "Developed proof-of-concept conversion of legacy Makefile build system to modern CMake implementation",
+                                "Identified and recommended 5 changes to modernize legacy codebase"
                             ]
                         }
                     ]
@@ -127,45 +138,35 @@
                     "titles": [
                         {
                             "role": "Principal Software Engineer",
-                            "start": "Feb 2024",
+                            "start": "May 2020",
                             "end": "Oct 2024",
                             "responsibility": [
-                                "Design and document architectural solutions for implementing complicated features that cross multiple engineering team",
-                                "Present in-depth analysis of problems and solutions to executive and engineering audiences",
-                                "Design enterprise-level architecture solutions",
-                                "Research solutions and make recommendations for complex engineering problems",
-                                "Implement processes to streamline architecture intake and output",
-                                "Coordinate design across several functional components and teams",
-                                "Negotiate feature requirements with stakeholders"
-                            ]
-                        },
-                        {
-                            "role": "Senior Software Engineer II - Embedded",
-                            "start": "Sep 2021",
-                            "end": "Feb 2024",
-                            "responsibility": [
-                                "Lead a team developing the next generation home security product using using a proprietary ARM based embedded Linux environment that conforms to security industry standards (SIA PC-01, UL985, UL1023))",
-                                "Organize several team members to implement design while driving best practices for development, testing, and deployment",
-                                "Maintain build artifacts and records in GCP (Google Cloud Storage, Spanner)",
-                                "Support production issues leveraging custom logging in Dynatrace and Splunk",
-                                "Drive coordination between development teams for multiple system components",
-                                "Participate in hardware validation at mass manufacturing facility",
-                                "Support and participate in third-party penetration testing."
-                            ]
-                        },
-                        {
-                            "role": "Embedded Software Engineer",
-                            "start": "May 2020",
-                            "end": "Sep 2021",
-                            "responsibility": [
-                                "Debug and modify Linux kernel code and drivers",
-                                "Research and develop embedded encryption tools and methods for ARM using OP-TEE",
-                                "Implement Secure Boot",
-                                "Lead the rewrite of an embedded security business logic application using modern C++ techniques (C++17) resulting in a 60% reduction of the lines of code and 95% unit test code coverage",
-                                "Drive process improvements to increase reliability and productivity of development team",
-                                "Build a firmware recovery platform (Python Django)",
-                                "Maintain Buildroot build system",
-                                "Automate build and deployment process (Jenkins, GCP Cloud Build, Harness). Establish coding standards and best practices"
+                                "Spent 10 months as one of two software architects for product engineering organization of 200 engineers designing several facets of ADT’s “Trusted Neighbor” feature set reporting to the Director of Product Architecture",
+                                "As a software architect, spent 50% of time converting requirements into holistic architectural solutions that spanned from C++ edge device firmware, through Java SpringBoot and GCP hosted backend, and to mobile and web UIs",
+                                "As a software architect, spent 25% of time communicating solutions to cross functional teams consisting of all levels of engineer, from junior developers to the VP of Engineering",
+                                "As a software architect, spent 25% of time working with C-suite to find and present solutions to high-visibility issues and feature requests",
+                                "Implemented processes to streamline architectural intake, solution review, and output",
+                                "Spent 3 years as Lead Engineer for Firmware Development team of 10 engineers reporting to the Director of Firmware Engineering developing embedded C++ business logic deployed to tens of thousands of Base devices",
+                                "As Lead Engineer, I spent 30% of time writing and reviewing modern C++ and Rust",
+                                "As Lead Engineer, I spent 30% of time mentoring more junior developers and fostering strong engineering principles",
+                                "As Lead Engineer, I spent 40% of time establishing priorities and coordinating development efforts across between firmware, backend, and UI development teams",
+                                "Oversaw full product lifecycle of ADT’s Base device including writing the first lines of C++ business logic code through first article inspection for mass manufacturing at the manufacturing facility in Vietnam",
+                                "Re-wrote legacy business logic application using modern C++ techniques (C++17) resulting in a 60% reduction in lines of code and 95% unit test code coverage",
+                                "Oversaw development of and integration with wireless devices and sensors using ULE and Z-Wave radios",
+                                "Ensured that the security system business logic conformed to security industry standards, primarily SIA PC-01",
+                                "Acted as primary maintainer of ARM based embedded linux distribution generated using Buildroot",
+                                "Established a culture of engineering excellence that focused on rigor and best practice to deliver high reliable code where under 5% of bug reports were regressions",
+                                "Implemented and maintained GCP build pipelines that generated and deployed build artifacts to tens of thousands of Base devices",
+                                "Established automated pipelines to ensure all unit tests passed, code coverage exceeded 95%, and that code was formatted and documented before any code could be merged",
+                                "Designed and implemented encrypted firmware upgrade system",
+                                "Supported production issues leveraging custom logging in Dynatrace and Splunk",
+                                "Implemented Secure Boot",
+                                "Developed embedded encryption tools for ARM using OP-TEE",
+                                "Built a firmware recovery platform using Python Django",
+                                "Participated in third-party penetration testing which found no vulnerabilities",
+                                "Debug and modify Linux kernel drivers for I2S audio, WiFi, and others",
+                                "Developed proof-of-concept board support package (BSP) for ARM based device using Yocto",
+                                "Consistently awarded highest performance ratings"
                             ]
                         }
                     ]
@@ -175,37 +176,22 @@
                     "location": "King of Prussia, PA",
                     "titles": [
                         {
-                            "role": "Software Development Team Lead - Embedded",
-                            "start": "Sep 2019",
+                            "role": "Staff Software Engineer",
+                            "start": "Jan 2017",
                             "end": "May 2020",
                             "responsibility": [
-                                "Lead a team developing embedded applications for credit card terminals to meet industry standards (EMV, ISO-8583, PCI-DSS)",
-                                "Organize and lead the development for a new embedded payment application",
-                                "Negotiate new features and schedule releases with input from stakeholders",
-                                "Interface with customers to gather feature requirements and handle support escalations"
-                            ]
-                        },
-                        {
-                            "role": "Senior Embedded Software Engineer",
-                            "start": "Dec 2018",
-                            "end": "Sep 2019",
-                            "responsibility": [
-                                "Fully automate device and application certification testing, including building a Python based UI and an OpenBuilds based robot driven by a Java Spring Boot application",
-                                "Drive industry best practices to the development, test, and deployment process",
-                                "Attend industry conferences and report on changing standards",
-                                "Own domain knowledge for payment certification requirements"
-                            ]
-                        },
-                        {
-                            "role": "Embedded Software Engineer",
-                            "start": "Jan 2017",
-                            "end": "Dec 2018",
-                            "responsibility": [
-                                "Manage build process of embedded application using Jenkins and Bitbucket",
-                                "Modernize legacy code base",
-                                "Leverage vendor SDK to develop payment acceptance features (Ingenico)",
-                                "Support and participate in PCI certifications",
-                                "Establish coding standards and best practices"
+                                "Led a team of 3 senior-level engineers developing embedded application for credit card terminals to meet industry standards (EMV, ISO-8583, ","PCI-DSS)",
+                                "Acted as lead developer for embedded payment application installed on over 100k credit card terminals",
+                                "Spent 50% of time working with stakeholders to interpret requirements and schedule development",
+                                "Spent 50% of time writing C++ (C++11) to resolve bugs and implement new features",
+                                "Organized and led the rewrite of a legacy C/C++ payment application to use modern C++ techniques resulting in a 70% reduction in lines of ","code",
+                                "Interfaced with customers to interpret feature requests into technical requirements",
+                                "Acted as subject matter expert for EMV and ISO-8583 domain knowledge",
+                                "Fully automated device and application certification testing, including building a Python based UI and an OpenBuilds based robot driven by ",a "Java Spring Boot application which resulting in $30k/mo savings",
+                                "Established rules and best practices for development, test, and deployment processes",
+                                "Implemented and maintained build and deployment pipelines using Jenkins, GoCD, and BitBucket",
+                                "Attended industry conferences and reported on changing standards",
+                                "Consistently awarded highest performance ratings"
                             ]
                         }
                     ]
@@ -216,44 +202,20 @@
                     "titles": [
                         {
                             "role": "Senior Software Engineer",
-                            "start": "May 2014",
+                            "start": "Sept 2007",
                             "end": "Jan 2017",
                             "responsibility": [
-                                "Act as Scrum Master for team of 5 to 10 engineers",
-                                "Develop high-speed interconnect between hypervisors using Infiniband",
-                                "Develop network monitoring application to assist in network security configuration"
-                            ]
-                        },
-                        {
-                            "role": "Software Engineer",
-                            "start": "Apr 2013",
-                            "end": "May 2014",
-                            "responsibility": [
-                                "Develop virtual device drivers for Linux and Windows",
-                                "Maintain Buildroot build system",
-                                "Communicate with engineers inside and outside of my team"
-                            ]
-                        },
-                        {
-                            "role": "Associate Software Engineer",
-                            "start": "Jun 2011",
-                            "end": "Apr 2013",
-                            "responsibility": [
-                                "Contribute to Secure Partitioning (s-Par) hypervisor",
-                                "Research and understand design guidelines",
-                                "Accurately estimate time required to complete tasks",
-                                "Document patch details effectively"
-                            ]
-                        },
-                        {
-                            "role": "Software Engineering Co-op",
-                            "start": "Sep 2007",
-                            "end": "Jun 2011",
-                            "responsibility": [
-                                "Write firmware in C and C#",
-                                "Identify, research, and fix bugs",
-                                "Implement and complete assigned tasks according to the SCRUM process",
-                                "Write applications to assist hardware testing"
+                                "Led development team of 5 to 10 engineers writing network monitoring applications for linux and windows to assist in Unisys Stealth ","configuration utility",
+                                "As team lead, I spent 50% of my time writing C/C++ and 50% managing requirements and delivery schedules",
+                                "Acted as Scrum Master for team of 5 to 10 engineers in development team of 15 teams and 140 engineers working on the Unisys s-Par Hypervisor",
+                                "As Scrum Master, I spent 80% of my time writing code to deliver features, and 20% of my time communicating priorities and planning delivery ","schedules",
+                                "Developed high-speed interconnect between hypervisor instances using Infiniband",
+                                "Developed virtual network (vNIC) device drivers for Linux and Windows to communicate between virtual machines running on Unisys s-Par",
+                                "Maintained Buildroot build system which generated several Linux images that comprised the Unisys s-Par hypervisor",
+                                "Acted as subject matter expert for Command subsystem of Unisys s-Par, written in C#",
+                                "Wrote C to contribute to the Control subsystem of Unisys s-Par",
+                                "Promoted from Associate Software Engineer to Senior Software Engineer within 3 years",
+                                "Consistently awarded highest performance ratings"
                             ]
                         }
                     ]
