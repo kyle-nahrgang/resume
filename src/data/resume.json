@@ -133,7 +133,7 @@
                     "location": "Blue Bell, PA",
                     "remote": true,
                     "tags": [
-                        "Software Architecture", "C++", "GCP", "Secure Boot", "Home Automation" 
+                        "Software Architecture", "C++", "GCP", "Secure Boot", "Home Automation"
                     ],
                     "titles": [
                         {
@@ -180,14 +180,14 @@
                             "start": "Jan 2017",
                             "end": "May 2020",
                             "responsibility": [
-                                "Led a team of 3 senior-level engineers developing embedded application for credit card terminals to meet industry standards (EMV, ISO-8583, ","PCI-DSS)",
+                                "Led a team of 3 senior-level engineers developing embedded application for credit card terminals to meet industry standards (EMV, ISO-8583, PCI-DSS)",
                                 "Acted as lead developer for embedded payment application installed on over 100k credit card terminals",
                                 "Spent 50% of time working with stakeholders to interpret requirements and schedule development",
                                 "Spent 50% of time writing C++ (C++11) to resolve bugs and implement new features",
-                                "Organized and led the rewrite of a legacy C/C++ payment application to use modern C++ techniques resulting in a 70% reduction in lines of ","code",
+                                "Organized and led the rewrite of a legacy C/C++ payment application to use modern C++ techniques resulting in a 70% reduction in lines of code",
                                 "Interfaced with customers to interpret feature requests into technical requirements",
                                 "Acted as subject matter expert for EMV and ISO-8583 domain knowledge",
-                                "Fully automated device and application certification testing, including building a Python based UI and an OpenBuilds based robot driven by ",a "Java Spring Boot application which resulting in $30k/mo savings",
+                                "Fully automated device and application certification testing, including building a Python based UI and an OpenBuilds based robot driven by a Java Spring Boot application which resulting in $30k/mo savings",
                                 "Established rules and best practices for development, test, and deployment processes",
                                 "Implemented and maintained build and deployment pipelines using Jenkins, GoCD, and BitBucket",
                                 "Attended industry conferences and reported on changing standards",
@@ -257,7 +257,7 @@
                     "title": "System and method of constructing a memory-based interconnect between multiple partitions",
                     "subtitle":  "Application US13/955,188",
                     "bullets": [
-        
+
                     ],
                     "description": "The shared memory interconnect system provides an improved method for efficiently and dynamically sharing resources between two or more guest partitions. The system also provides a method to amend the parameters of the shared resources without resetting all guest partitions. In various embodiments, a XML file is used to dynamically define the parameters of shared resources. In one such embodiment using a XML or equivalent file, the interconnect system driver will establish a mailbox shared by each guest partition. The mailbox provides messaging queues and related structures between the guest partitions. In various embodiments, the interconnect system driver may use macros to locate each memory structure. The shared memory interconnect system allows a virtualization system to establish the parameters of shared resources during runtime.",
                     "tags": [
